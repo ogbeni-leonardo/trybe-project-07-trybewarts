@@ -14,8 +14,7 @@
   display: flex;
 }
 
-main,
-#evaluation-form {
+main , #evaluation-form {
   display: flex;
 }
 
@@ -32,7 +31,7 @@ main img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2%;  
+  gap: 2%;
 }
 
 .w50 {
@@ -40,6 +39,11 @@ main img {
 }
 
 #family {
+  display: flex;
+  flex-direction: column;
+}
+
+#learn {
   display: flex;
   flex-direction: column;
 }
