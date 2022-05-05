@@ -38,3 +38,8 @@ main img {
 .w50 {
   flex-basis: 48%;
 }
+
+#family {
+  display: flex;
+  flex-direction: column;
+}
