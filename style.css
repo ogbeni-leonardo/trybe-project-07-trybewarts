@@ -27,3 +27,14 @@ main,
 main img {
   height: 500px;
 }
+
+.group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;  
+}
+
+.w50 {
+  flex-basis: 48%;
+}
