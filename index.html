@@ -2,87 +2,129 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Project | Trybewarts</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Project | Trybewarts</title>
 </head>
 
 <body>
-    <header class="header">
-        <img src="./images/trybewarts-header-logo.svg" alt="logo da trybewarts" class="trybewarts-header-logo" />
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
+  <header class="header">
+    <img src="./images/trybewarts-header-logo.svg" alt="logo da trybewarts" class="trybewarts-header-logo" />
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-        <form action="" class="trybewarts-login">
-            <input type="text" name="email" id="email" placeholder="Email">
-            <input type="password" name="password" id="password" placeholder="Senha">
-            <button id="btn-form-header">Entrar</button>
-        </form>
-    </header>
+    <form action="" class="trybewarts-login">
+      <input type="text" name="email" id="email" placeholder="Email">
+      <input type="password" name="password" id="password" placeholder="Senha">
+      <button id="btn-form-header">Entrar</button>
+    </form>
+  </header>
 
-    <main>
-        <form action="" id="evaluation-form">
-            <div class="group">
-                <input class="w50" type="text" name="nome" id="input-name" placeholder="Nome">
-                <input class="w50" type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-                <input class="w50" type="text" name="email" id="input-email" placeholder="Email">
-                <div class="w50">
-                    <label for="house">Casa</label>
-                    <select id="house">
-                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                    </select>
-                </div>
-            </div>
-            <div id="middle">
-              <div id="family">
-                <p id="label-family">Qual sua família?</p>
-                <label for="frontend">
-                  <input type="radio" name="family" value="Frontend" id="frontend"/>
-                  Frontend</label>                
-                <label for="backend">
-                  <input type="radio" name="family" value="Backend" id="backend"/>
-                  Backend</label>                
-                <label for="fullStack">
-                  <input type="radio" name="family" value="FullStack" id="fullStack"/>
-                  FullStack</label>
-              </div>
-              <div id="learn">
-                <p id="label-content">Qual conteúdo você está com mais vontade de aprender?</p>
-                <label for="hofs">
-                  <input type="checkbox" name="content" value="HoFs" id="hofs"/>
-                  HoFs
-                </label>
-                <label for="jest">
-                  <input type="checkbox" name="content" value="Jest" id="jest"/>
-                  Jest
-                </label>
-                <label for="promises">
-                  <input type="checkbox" name="content" value="Promises" id="promises"/> Promises
-                </label>
-                <label for="react">
-                  <input type="checkbox" name="content" value="React" id="react"/>
-                  React
-                </label>
-                <label for="sql">
-                  <input type="checkbox" name="content" value="SQL" id="sql"/>
-                  SQL
-                </label>
-                <label for="python">
-                  <input type="checkbox" name="content" value="Python" id="python"/>
-                  Python
-                </label> 
-              </div>
-            </div>
-        </form>
+  <main>
+    <form action="" id="evaluation-form">
+      <div class="group">
+        <input class="w50" type="text" name="nome" id="input-name" placeholder="Nome">
+        <input class="w50" type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+        <input class="w50" type="text" name="email" id="input-email" placeholder="Email">
+        <div class="w50">
+          <label for="house">Casa</label>
+          <select id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
+      </div>
+      <div id="middle">
+        <div id="family">
+          <p id="label-family">Qual sua família?</p>
+          <label for="frontend">
+            <input type="radio" name="family" value="Frontend" id="frontend" />
+            Frontend</label>
+          <label for="backend">
+            <input type="radio" name="family" value="Backend" id="backend" />
+            Backend</label>
+          <label for="fullStack">
+            <input type="radio" name="family" value="FullStack" id="fullStack" />
+            FullStack</label>
+        </div>
+        <div id="learn">
+          <p id="label-content">Qual conteúdo você está com mais vontade de aprender?</p>
+          <label for="hofs">
+            <input type="checkbox" name="content" value="HoFs" id="hofs" />
+            HoFs
+          </label>
+          <label for="jest">
+            <input type="checkbox" name="content" value="Jest" id="jest" />
+            Jest
+          </label>
+          <label for="promises">
+            <input type="checkbox" name="content" value="Promises" id="promises" /> Promises
+          </label>
+          <label for="react">
+            <input type="checkbox" name="content" value="React" id="react" />
+            React
+          </label>
+          <label for="sql">
+            <input type="checkbox" name="content" value="SQL" id="sql" />
+            SQL
+          </label>
+          <label for="python">
+            <input type="checkbox" name="content" value="Python" id="python" />
+            Python
+          </label>
+        </div>
+        <label id="label-rate"> Como você avalia a Trybewarts?
+          <label for="um">
+            <input type="radio" name="rate" value="1" id="um" />
+            1
+          </label>
+          <label for="dois">
+            <input type="radio" name="rate" value="2" id="dois" />
+            2
+          </label>
+          <label for="tres">
+            <input type="radio" name="rate" value="3" id="tres" />
+            3
+          </label>
+          <label for="quatro">
+            <input type="radio" name="rate" value="4" id="quatro" />
+            4
+          </label>
+          <label for="cinco">
+            <input type="radio" name="rate" value="5" id="cinco" />
+            5
+          </label>
+          <label for="seis">
+            <input type="radio" name="rate" value="6" id="seis" />
+            6
+          </label>
+          <label for="sete">
+            <input type="radio" name="rate" value="7" id="sete" />
+            7
+          </label>
+          <label for="oito">
+            <input type="radio" name="rate" value="8" id="oito" />
+            8
+          </label>
+          <label for="nove">
+            <input type="radio" name="rate" value="9" id="nove" />
+            9
+          </label>
+          <label for="dez">
+            <input type="radio" name="rate" value="10" id="dez" />
+            10
+          </label>        
+        </label>
+      </div>
+    </form>
 
-        <img src="./images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo">
-    </main>
+    <img src="./images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo">
+  </main>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
