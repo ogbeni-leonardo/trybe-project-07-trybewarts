@@ -33,6 +33,7 @@ main img {
 }
 
 .group {
+  padding: 5px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -53,11 +54,14 @@ main img {
 
 #family {
   display: flex;
+  gap: 5px;
   flex-direction: column;
 }
 
 #learn {
   display: flex;
+  gap: 5px;
+  width: 50%;
   flex-direction: column;
 }
 
@@ -69,6 +73,14 @@ main img {
 
 .logobody {
   display: flex;
+  gap: 5px;
   width: 50%;
   justify-content: center;
+}
+
+#textarea-container {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  gap: 5px;
 }
