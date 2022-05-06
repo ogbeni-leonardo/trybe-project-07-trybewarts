@@ -24,3 +24,9 @@ const agreement = byId('agreement');
 agreement.onchange = (event) => {
   byId('submit-btn').disabled = !event.target.checked;
 };
+const textArea = byId('textarea');
+textArea.addEventListener('keyup', () => {
+  const caracteresRestantes = 500 - textArea.value.length;
+  const count = document.getElementById('counter');
+  count.innerHTML = `Caracteres : ${caracteresRestantes}`;
+});
