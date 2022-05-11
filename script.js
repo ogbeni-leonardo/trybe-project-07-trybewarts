@@ -18,20 +18,20 @@ byId('agreement').onchange = (event) => {
 
 byId('textarea').addEventListener('keyup', (event) => {
   const caracteresRestantes = 500 - event.target.value.length;
-  byId('counter').innerHTML = `Caracteres : ${caracteresRestantes}`;
+  byId('counter').innerHTML = `${caracteresRestantes}/500`;
 });
 
 function concatItems(textValues, checkedItems) {
   const radioFamily = document.querySelector('input[name="family"]:checked');
   const radioRate = document.querySelector('input[name="rate"]:checked');
-  const result = `<div class="result">
-  <p>Nome: ${textValues[0]} ${textValues[1]}</p>
-  <p>Email: ${textValues[2]}</p>
-  <p>Casa: ${textValues[3]}</p>
-  <p>Família: ${(radioFamily) ? radioFamily.value : ''}</p>
-  <p>Matérias: ${checkedItems.join(', ')}</p>
-  <p>Avaliação: ${(radioRate) ? radioRate.value : ''}</p>
-  <p>Observações: ${textValues[4]}</p>
+  const result = `<div id="result" class="group">
+  <p>Nome: <span>${textValues[0]} ${textValues[1]}</span></p>
+  <p>Email: <span>${textValues[2]}</span></p>
+  <p>Casa: <span>${textValues[3]}</span></p>
+  <p>Família: <span>${(radioFamily) ? radioFamily.value : ''}</span></p>
+  <p>Matérias: <span>${checkedItems.join(', ')}</span></p>
+  <p>Avaliação: <span>${(radioRate) ? radioRate.value : ''}</span></p>
+  <p>Observações: <span>${textValues[4]}</span></p>
 </div>`;
 
   byId('evaluation-form').innerHTML = result;
